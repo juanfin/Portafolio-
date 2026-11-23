@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5f1">
+  <title>Juan Sebastián Ramírez Díaz — Economist & Financial Analyst</title>
+  <meta name="description" content="Portfolio of Juan Sebastián Ramírez Díaz, an economist focused on financial analysis, transfer pricing, macroeconomic research, and data-driven decision support.">
+  <meta property="og:title" content="Juan Sebastián Ramírez Díaz — Economist & Financial Analyst">
+  <meta property="og:description" content="Financial analysis, transfer pricing, macroeconomic research, and data-driven decision support.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #10120f;
+      --white: #f5f4ee;
+      --ink: #f5f4ee;
+      --muted: #a9afa6;
+      --line: rgb(245 244 238 / 22%);
+      --green: #a7c77a;
+      --green-dark: #173c2c;
+      --lime: #bbd98e;
+      --soft-green: #243a2b;
+      --serif: "Syne", "Arial Black", ui-sans-serif, system-ui, sans-serif;
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --content: 1160px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 92px; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid #8aa94b; outline-offset: 4px; border-radius: 3px; }
+    .wrap { width: min(var(--content), calc(100% - 64px)); margin-inline: auto; }
+    .topbar { height: 78px; position: sticky; z-index: 10; top: 0; display: flex; align-items: center; background: rgb(244 245 241 / 91%); border-bottom: 1px solid rgb(220 225 217 / 75%); backdrop-filter: blur(14px); }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; font-size: .86rem; font-weight: 700; letter-spacing: -.025em; }
+    .brand-mark { width: 36px; height: 36px; display: grid; place-items: center; background: var(--green); color: white; border-radius: 50%; font-family: var(--serif); font-size: .95rem; }
+    .nav-links { display: flex; align-items: center; gap: clamp(18px, 3vw, 38px); }
+    .nav-links a { color: #536158; text-decoration: none; font-size: .78rem; font-weight: 600; transition: color .2s; }
+    .nav-links a:hover { color: var(--green); }
+    .nav-links .nav-contact { padding: 11px 16px; color: white; background: var(--green); border-radius: 99px; }
+    .nav-links .nav-contact:hover { background: var(--green-dark); color: white; }
+    .hero { position: relative; min-height: 630px; padding: 88px 0 78px; display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 64px; }
+    .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--green); font-size: .69rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+    .eyebrow::before { content: ""; display: block; width: 26px; height: 1px; background: currentColor; }
+    h1 { max-width: 680px; margin: 24px 0 20px; font-family: var(--serif); font-weight: 400; font-size: clamp(3.4rem, 7vw, 6.35rem); line-height: .98; letter-spacing: -.065em; }
+    h1 em { color: var(--green); font-weight: 400; }
+    .hero-copy { max-width: 550px; color: #59665e; font-size: clamp(1rem, 1.45vw, 1.13rem); line-height: 1.8; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 13px; margin-top: 31px; }
+    .button { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 0 19px; border: 1px solid var(--green); border-radius: 99px; background: var(--green); color: white; text-decoration: none; font-size: .82rem; font-weight: 650; transition: transform .2s, background .2s; }
+    .button:hover { transform: translateY(-2px); background: var(--green-dark); }
+    .button.secondary { color: var(--ink); background: transparent; border-color: #cbd3ca; }
+    .button.secondary:hover { background: var(--white); }
+    .button svg { width: 15px; height: 15px; }
+    .hero-note { display: flex; align-items: center; gap: 8px; margin-top: 25px; color: #748078; font-size: .76rem; }
+    .hero-note svg { width: 15px; height: 15px; color: var(--green); }
+    .visual { position: relative; min-height: 400px; display: grid; place-items: center; }
+    .orbit { position: absolute; width: min(100%, 430px); aspect-ratio: 1; border: 1px solid #d8dfd5; border-radius: 50%; }
+    .orbit::before, .orbit::after { content: ""; position: absolute; inset: 34px; border: 1px solid #e1e5dd; border-radius: 50%; }
+    .orbit::after { inset: 69px; }
+    .orbit-dot { position: absolute; width: 11px; height: 11px; top: 17%; right: 18%; border: 3px solid var(--paper); border-radius: 50%; background: #87a957; box-shadow: 0 0 0 1px #87a957; }
+    .profile-card { position: relative; z-index: 1; width: min(82%, 345px); padding: 27px; background: var(--white); border: 1px solid #e7e9e2; border-radius: 7px; box-shadow: 0 24px 65px rgb(27 48 34 / 10%); transform: rotate(-2deg); }
+    .card-top { display: flex; align-items: center; justify-content: space-between; padding-bottom: 20px; border-bottom: 1px solid #e8ebe5; }
+    .card-label { color: #78847b; font-size: .63rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .card-symbol { width: 34px; height: 34px; display: grid; place-items: center; color: var(--green); background: var(--soft-green); border-radius: 50%; }
+    .card-symbol svg { width: 17px; height: 17px; }
+    .card-title { margin: 21px 0 4px; font-family: var(--serif); font-size: 1.55rem; font-weight: 400; letter-spacing: -.04em; }
+    .card-subtitle { margin: 0; color: var(--muted); font-size: .78rem; }
+    .chart { width: 100%; height: 101px; margin: 22px 0 17px; overflow: visible; }
+    .chart-grid { stroke: #e9ece6; stroke-width: 1; }
+    .chart-line { fill: none; stroke: var(--green); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .chart-fill { fill: url(#chartFill); }
+    .card-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .card-tags span { padding: 7px 9px; border-radius: 3px; background: #f0f3ed; color: #536158; font-size: .64rem; font-weight: 600; }
+    .floating-note { position: absolute; right: 0; bottom: 36px; display: flex; align-items: center; gap: 10px; padding: 13px 15px; border: 1px solid #e5e8e0; border-radius: 5px; background: var(--white); box-shadow: 0 12px 30px rgb(27 48 34 / 8%); font-size: .72rem; font-weight: 650; transform: rotate(2deg); }
+    .floating-note .note-icon { width: 26px; height: 26px; display: grid; place-items: center; border-radius: 50%; background: var(--lime); color: var(--green-dark); }
+    .floating-note svg { width: 13px; height: 13px; }
+    .divider { border: 0; border-top: 1px solid var(--line); }
+    .section { padding: 102px 0; }
+    .section-head { display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 40px; margin-bottom: 45px; }
+    .section-kicker { margin-bottom: 14px; color: var(--green); font-size: .68rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
+    h2 { margin: 0; font-family: var(--serif); font-size: clamp(2.45rem, 4.5vw, 4rem); font-weight: 400; line-height: 1.05; letter-spacing: -.055em; }
+    .section-intro { max-width: 470px; margin: 0 0 4px auto; color: #637067; font-size: .96rem; line-height: 1.8; }
+    .about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 85px; align-items: start; }
+    .about-text { max-width: 630px; color: #536158; font-size: 1.07rem; line-height: 1.95; }
+    .about-text p { margin: 0 0 19px; }
+    .about-text strong { color: var(--ink); font-weight: 650; }
+    .facts { border-top: 1px solid var(--line); }
+    .fact { display: flex; justify-content: space-between; gap: 18px; padding: 16px 0; border-bottom: 1px solid var(--line); font-size: .82rem; }
+    .fact span:first-child { color: #7a857e; }
+    .fact span:last-child { text-align: right; font-weight: 650; }
+    .expertise { background: #e9eee7; }
+    .expertise-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    .expertise-card { min-height: 276px; padding: 27px; background: rgb(255 254 250 / 77%); border: 1px solid #dfe5dc; transition: transform .2s, box-shadow .2s; }
+    .expertise-card:hover { transform: translateY(-4px); box-shadow: 0 15px 30px rgb(27 48 34 / 7%); }
+    .expertise-index { color: #8ba18e; font-family: var(--serif); font-size: .9rem; }
+    .expertise-icon { width: 40px; height: 40px; display: grid; place-items: center; margin: 24px 0 19px; border-radius: 50%; background: #e8eee7; color: var(--green); }
+    .expertise-icon svg { width: 19px; height: 19px; }
+    .expertise-card h3 { margin: 0 0 10px; font-family: var(--serif); font-size: 1.35rem; font-weight: 400; letter-spacing: -.025em; }
+    .expertise-card p { margin: 0; color: #68756c; font-size: .84rem; line-height: 1.75; }
+    .toolbox { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 27px; }
+    .toolbox span { padding: 9px 13px; border: 1px solid #d7ded5; border-radius: 99px; color: #57645a; background: rgb(255 254 250 / 50%); font-size: .73rem; font-weight: 600; }
+    .experience-layout { display: grid; grid-template-columns: .7fr 1.3fr; gap: 80px; }
+    .experience-aside { max-width: 270px; color: #68756c; font-size: .91rem; line-height: 1.8; }
+    .timeline { border-top: 1px solid var(--line); }
+    .job { display: grid; grid-template-columns: 160px 1fr; gap: 30px; padding: 27px 0 29px; border-bottom: 1px solid var(--line); }
+    .job-date { padding-top: 4px; color: #748078; font-size: .73rem; font-weight: 650; }
+    .job-title { margin: 0; font-family: var(--serif); font-size: 1.45rem; font-weight: 400; letter-spacing: -.025em; }
+    .job-company { margin: 5px 0 12px; color: var(--green); font-size: .82rem; font-weight: 650; }
+    .job-description { max-width: 610px; margin: 0; color: #68756c; font-size: .84rem; line-height: 1.8; }
+    .education { padding-top: 44px; display: grid; grid-template-columns: 160px 1fr; gap: 30px; }
+    .education-label { color: #748078; font-size: .73rem; font-weight: 650; }
+    .education-title { margin: 0; font-family: var(--serif); font-size: 1.35rem; font-weight: 400; }
+    .education-detail { margin: 6px 0 0; color: #68756c; font-size: .84rem; }
+    .credentials { padding: 88px 0; background: var(--green-dark); color: #f6f6ed; }
+    .credentials .section-kicker { color: var(--lime); }
+    .credentials h2 { max-width: 510px; font-size: clamp(2.3rem, 4vw, 3.5rem); }
+    .credentials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; align-items: end; }
+    .credentials-copy { max-width: 470px; margin: 21px 0 0; color: #c4d1c5; font-size: .89rem; line-height: 1.8; }
+    .credential-list { display: flex; flex-wrap: wrap; gap: 9px; justify-content: flex-start; }
+    .credential-list span { padding: 10px 13px; border: 1px solid rgb(237 244 233 / 23%); border-radius: 99px; color: #e1e9dd; font-size: .73rem; }
+    .contact { padding: 105px 0 90px; }
+    .contact-panel { position: relative; overflow: hidden; display: flex; justify-content: space-between; align-items: end; gap: 32px; padding: 55px; background: var(--lime); }
+    .contact-panel::after { content: ""; position: absolute; width: 320px; height: 320px; right: 17%; top: -235px; border: 1px solid rgb(40 91 70 / 20%); border-radius: 50%; box-shadow: 0 0 0 35px rgb(40 91 70 / 5%), 0 0 0 70px rgb(40 91 70 / 5%); }
+    .contact .section-kicker { color: #476329; }
+    .contact h2 { position: relative; z-index: 1; max-width: 560px; }
+    .contact-copy { max-width: 460px; margin: 15px 0 0; color: #53634b; font-size: .9rem; line-height: 1.75; }
+    .contact-links { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 11px; min-width: 220px; }
+    .contact-link { display: inline-flex; align-items: center; gap: 10px; color: #243c2b; text-decoration: none; font-size: .81rem; font-weight: 700; }
+    .contact-link svg { width: 16px; height: 16px; }
+    .contact-link:hover { text-decoration: underline; text-underline-offset: 4px; }
+    footer { padding: 22px 0; border-top: 1px solid var(--line); color: #768178; font-size: .71rem; }
+    .footer-inner { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .footer-name { color: #47544b; font-weight: 650; }
+    [data-reveal] { opacity: 1; transform: translateY(0); }
+    .motion-ready [data-reveal] { opacity: 0; transform: translateY(14px); transition: opacity .65s ease, transform .65s ease; }
+    .motion-ready [data-reveal].is-visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } .motion-ready [data-reveal] { opacity: 1; transform: none; } }
+    @media (max-width: 850px) {
+      .hero { min-height: 0; grid-template-columns: 1fr  .82fr; gap: 24px; padding: 74px 0 68px; }
+      .visual { min-height: 340px; }
+      .section { padding: 78px 0; }
+      .about-grid { gap: 45px; }
+      .experience-layout { gap: 42px; }
+      .job { grid-template-columns: 125px 1fr; gap: 20px; }
+      .education { grid-template-columns: 125px 1fr; gap: 20px; }
+      .contact-panel { padding: 40px; }
+    }
+    @media (max-width: 640px) {
+      .wrap { width: min(var(--content), calc(100% - 38px)); }
+      .topbar { height: 66px; }
+      .brand { font-size: .78rem; }
+      .brand-mark { width: 32px; height: 32px; }
+      .nav-links { gap: 14px; }
+      .nav-links a { font-size: .7rem; }
+      .nav-links a:nth-child(2), .nav-links a:nth-child(3) { display: none; }
+      .nav-links .nav-contact { padding: 9px 13px; }
+      .hero { grid-template-columns: 1fr; padding: 66px 0 55px; gap: 22px; }
+      h1 { max-width: 520px; font-size: clamp(3.2rem, 15vw, 5rem); }
+      .visual { min-height: 330px; }
+      .orbit { width: min(88vw, 340px); }
+      .profile-card { width: min(78%, 300px); padding: 22px; }
+      .floating-note { right: 1%; bottom: 15px; }
+      .section-head { grid-template-columns: 1fr; gap: 17px; margin-bottom: 30px; }
+      .section-intro { margin: 0; }
+      .section { padding: 69px 0; }
+      .about-grid { grid-template-columns: 1fr; gap: 24px; }
+      .about-text { font-size: .98rem; }
+      .expertise-grid { grid-template-columns: 1fr; gap: 11px; }
+      .expertise-card { min-height: 0; padding: 22px; }
+      .expertise-icon { margin: 16px 0 13px; }
+      .experience-layout { grid-template-columns: 1fr; gap: 25px; }
+      .experience-aside { max-width: 460px; }
+      .job { grid-template-columns: 1fr; gap: 8px; padding: 22px 0; }
+      .job-date { padding: 0; }
+      .education { grid-template-columns: 1fr; gap: 8px; padding-top: 31px; }
+      .credentials { padding: 68px 0; }
+      .credentials-grid { grid-template-columns: 1fr; gap: 28px; }
+      .credential-list { gap: 7px; }
+      .contact { padding: 68px 0 60px; }
+      .contact-panel { align-items: flex-start; flex-direction: column; padding: 31px 25px; gap: 27px; }
+      .contact-panel::after { right: -55px; }
+      .contact-links { gap: 13px; }
+      .footer-inner { align-items: flex-start; flex-direction: column; gap: 6px; }
+    }
+    /* Chapter-inspired art direction: charcoal opening, sage details, then a light finish. */
+    body { background: #10120f; color: #f5f4ee; transition: background .8s ease, color .8s ease; }
+    body.light { background: #f5f4ee; color: #171a16; }
+    html { scroll-padding-top: 24px; }
+    .topbar { position: fixed; inset: 0 0 auto; height: 66px; background: transparent; border: 0; backdrop-filter: none; mix-blend-mode: difference; color: white; }
+    .reading-progress { position: fixed; z-index: 45; inset: 0 auto auto 0; width: 100%; height: 3px; background: transparent; }
+    .reading-progress span { display: block; width: 100%; height: 100%; background: var(--lime); transform: scaleX(0); transform-origin: left center; }
+    .brand { color: white; font-family: var(--serif); font-size: .8rem; letter-spacing: .07em; text-transform: uppercase; }
+    .brand-mark { width: auto; height: auto; display: inline; background: transparent; color: white; border-radius: 0; font-family: var(--serif); font-size: 1rem; }
+    .nav-links a { color: white; font-family: var(--serif); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; }
+    .nav-links .nav-contact { padding: 0; border-radius: 0; background: transparent; }
+    .nav-links .nav-contact:hover { color: var(--lime); background: transparent; }
+    .hero { position: relative; min-height: 100svh; grid-template-columns: 1fr; align-items: end; gap: 0; padding-top: 110px; padding-bottom: clamp(46px, 8vh, 90px); }
+    .hero > div:first-child { position: relative; z-index: 2; }
+    .eyebrow,.section-kicker { color: var(--lime); font-family: var(--serif); letter-spacing: .16em; }
+    .hero h1 { max-width: none; margin: 20px 0 28px; font-size: clamp(4rem, 12.2vw, 11.8rem); line-height: .84; letter-spacing: -.07em; text-transform: uppercase; }
+    .hero h1 { color: #f5f4ee; }
+    .hero-copy { max-width: 600px; color: rgb(245 244 238 / 76%); }
+    .hero-actions .button { color: #151a13; background: var(--lime); border-color: var(--lime); }
+    .hero-actions .button:hover { background: #d0e8a7; }
+    .hero-actions .button.secondary { color: #f5f4ee; border-color: rgb(245 244 238 / 45%); background: transparent; }
+    .hero-actions .button.secondary:hover { background: rgb(245 244 238 / 10%); }
+    .hero-note { color: rgb(245 244 238 / 62%); }
+    .visual { position: absolute; width: min(36vw, 430px); min-height: 0; height: min(36vw, 430px); right: max(8vw, calc((100vw - var(--content)) / 2)); top: 18%; opacity: .78; }
+    .orbit { width: 100%; border-color: rgb(245 244 238 / 17%); }
+    .orbit::before,.orbit::after { border-color: rgb(245 244 238 / 13%); }
+    .profile-card { width: 80%; padding: 21px; background: #1b201a; border-color: #343c32; color: #f5f4ee; box-shadow: 0 24px 65px rgb(0 0 0 / 24%); }
+    .card-top { border-color: #343c32; }
+    .card-label,.card-subtitle { color: #acb5a7; }
+    .card-symbol,.expertise-icon { background: #30442f; color: var(--lime); }
+    .card-tags span { background: #29352a; color: #d7dfd1; }
+    .floating-note { color: #e8eee2; background: #20291f; border-color: #384434; }
+    .floating-note .note-icon { background: var(--lime); }
+    .section { padding: clamp(92px, 13vw, 160px) 0 clamp(58px, 7vw, 90px); }
+    .section-head { grid-template-columns: 1fr 2fr; align-items: start; margin-bottom: clamp(32px, 5vw, 62px); }
+    .section-head > div { display: contents; }
+    .section-kicker { grid-column: 1; padding-top: 10px; }
+    .section-head h2 { grid-column: 2; font-size: clamp(2.9rem, 7vw, 6.1rem); line-height: .91; letter-spacing: -.065em; text-transform: uppercase; }
+    .section-intro { grid-column: 2; max-width: 740px; margin: 22px 0 0; color: rgb(245 244 238 / 65%); }
+    .section:not(.expertise) { position: relative; }
+    .section:not(.expertise)::before { position: absolute; top: clamp(22px, 5vw, 70px); right: max(18px, calc((100vw - var(--content)) / 2)); color: rgb(245 244 238 / 5%); font-family: var(--serif); font-size: clamp(9rem, 24vw, 22rem); font-weight: 800; line-height: .8; pointer-events: none; }
+    #about::before { content: "I"; }
+    #expertise::before { content: "II"; }
+    #experience::before { content: "III"; color: rgb(24 35 26 / 6%); }
+    .about-grid { position: relative; z-index: 1; grid-template-columns: 2fr 1fr; gap: 50px; }
+    .about-text { color: rgb(245 244 238 / 76%); font-size: 1rem; }
+    .about-text strong { color: #f5f4ee; }
+    .facts { border-color: rgb(245 244 238 / 24%); }
+    .fact { border-color: rgb(245 244 238 / 24%); }
+    .fact span:first-child,.job-date,.education-label { color: #a5ada2; }
+    .expertise { overflow: hidden; background: #10120f; }
+    .expertise-grid { grid-auto-flow: column; grid-auto-columns: minmax(275px, 1fr); grid-template-columns: none; gap: 17px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 0 24px; scrollbar-color: #61774c transparent; }
+    .expertise-card { min-height: 290px; padding: 26px; color: #f5f4ee; background: #1a1e19; border-color: #353b32; scroll-snap-align: start; }
+    .expertise-card:nth-child(2) { background: #233327; }
+    .expertise-card:nth-child(3) { background: #dce7d4; color: #172117; }
+    .expertise-card:nth-child(3) p { color: #586558; }
+    .expertise-card:nth-child(3) .expertise-icon { background: #c2d5b8; color: #285b46; }
+    .expertise-card:nth-child(3) .expertise-index { color: #637962; }
+    .expertise-card p { color: #b8beb4; }
+    .toolbox span { color: #dce4d7; border-color: rgb(245 244 238 / 27%); background: transparent; }
+    #experience { background: #f5f4ee; color: #171a16; }
+    #experience .section-intro,#experience .experience-aside,#experience .job-description,#experience .education-detail { color: #657065; }
+    #experience .section-kicker { color: #55753d; }
+    #experience .timeline,#experience .job,#experience .fact { border-color: #d3d9d0; }
+    #experience .job-company { color: #426739; }
+    #experience .section-head h2 { color: #171a16; }
+    .credentials { background: #234b35; }
+    .credentials h2 { text-transform: uppercase; }
+    .credentials-copy { color: #d2ddcf; }
+    .credential-list span { border-color: rgb(235 244 232 / 28%); }
+    .contact { background: #f5f4ee; color: #171a16; }
+    .contact-panel { background: #d9e7c7; }
+    .contact .section-kicker { color: #55753d; }
+    .contact-copy { color: #546250; }
+    .contact-link { color: #234b35; }
+    footer { color: #7c8579; border-color: #d3d9d0; background: #f5f4ee; }
+    .footer-name { color: #364338; }
+    .motion-ready [data-reveal] { opacity: 0; transform: translateY(16px); }
+    .motion-ready [data-reveal].is-visible { opacity: 1; transform: none; }
+    @media (max-width: 850px) {
+      .hero { grid-template-columns: 1fr; }
+      .visual { width: 38vw; height: 38vw; top: 24%; right: 5%; }
+      .hero-copy { max-width: 54%; }
+      .section-head { grid-template-columns: 1fr 2fr; }
+      .about-grid { grid-template-columns: 1fr; }
+      .expertise-grid { grid-auto-columns: minmax(260px, 70%); }
+    }
+    @media (max-width: 640px) {
+      .topbar { height: 56px; }
+      .nav-links { gap: 10px; }
+      .nav-links a { font-size: .58rem; }
+      .nav-links a:nth-child(2),.nav-links a:nth-child(3) { display: none; }
+      .hero { min-height: 100svh; padding-top: 100px; padding-bottom: 52px; }
+      .hero h1 { max-width: 100%; font-size: clamp(3.55rem, 16vw, 6rem); }
+      .hero-copy { max-width: 100%; }
+      .visual { width: 190px; height: 190px; min-height: 0; top: 100px; right: 4%; opacity: .28; }
+      .profile-card { width: 86%; padding: 13px; }
+      .card-title { font-size: 1rem; }
+      .card-subtitle,.card-tags { display: none; }
+      .chart { height: 65px; margin: 9px 0 0; }
+      .floating-note { display: none; }
+      .section-head { grid-template-columns: 1fr; gap: 10px; }
+      .section-kicker,.section-head h2,.section-intro { grid-column: 1; }
+      .section-head h2 { font-size: clamp(2.7rem, 13vw, 4.3rem); }
+      .expertise-grid { grid-auto-columns: minmax(260px, 86%); }
+      .credentials-grid { grid-template-columns: 1fr; }
+      .section:not(.expertise)::before { top: 34px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="topbar" aria-label="Main navigation">
+    <div class="nav wrap">
+      <a class="brand" href="#home" aria-label="Juan Sebastián Ramírez Díaz, home"><span class="brand-mark" aria-hidden="true">JR</span><span>Juan Sebastián Ramírez Díaz</span></a>
+      <div class="nav-links">
+        <a href="#about">About</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </nav>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
+
+  <header class="hero wrap" id="home">
+    <div data-reveal>
+      <div class="eyebrow">Economist · Financial analysis</div>
+      <h1>Juan Sebastián<br>Ramírez Díaz</h1>
+      <p class="hero-copy">I connect financial data, economic context, and clear communication to help teams make well-informed decisions.</p>
+      <div class="hero-actions">
+        <a class="button" href="#expertise">Explore my work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+        <a class="button secondary" href="mailto:juanr.99731@gmail.com">Contact me</a>
+      </div>
+      <div class="hero-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Bogotá, Colombia <span aria-hidden="true">·</span> Available for professional conversations</div>
+    </div>
+    <div class="visual" data-reveal aria-label="Illustration representing financial analysis">
+      <div class="orbit" aria-hidden="true"><span class="orbit-dot"></span></div>
+      <article class="profile-card" aria-label="Areas of focus: financial analysis, economic research, and data">
+        <div class="card-top"><span class="card-label">A perspective in progress</span><span class="card-symbol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 18V6m0 12h16M7 15l4-4 3 3 6-7"/></svg></span></div>
+        <h2 class="card-title">From data to direction</h2>
+        <p class="card-subtitle">An analytical approach to complex questions.</p>
+        <svg class="chart" viewBox="0 0 300 100" preserveAspectRatio="none" role="img" aria-label="Decorative upward trend line">
+          <defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#9fbd8d" stop-opacity=".28"/><stop offset="1" stop-color="#9fbd8d" stop-opacity="0"/></linearGradient></defs>
+          <path class="chart-grid" d="M0 20H300M0 50H300M0 80H300"/><path class="chart-fill" d="M0 78 42 66 79 71 119 44 158 54 197 30 236 39 273 14 300 19V100H0Z"/><path class="chart-line" d="M0 78 42 66 79 71 119 44 158 54 197 30 236 39 273 14 300 19"/>
+        </svg>
+        <div class="card-tags"><span>Finance</span><span>Economics</span><span>Data</span></div>
+      </article>
+      <div class="floating-note"><span class="note-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m5 12 4 4L19 6"/></svg></span>Insight grounded in evidence</div>
+    </div>
+  </header>
+
+  <hr class="divider">
+
+  <main>
+    <section class="section wrap" id="about">
+      <div class="section-head" data-reveal>
+        <div><div class="section-kicker">01 / About</div><h2>Curious by nature.<br>Rigorous by practice.</h2></div>
+        <p class="section-intro">An economist working across financial advisory, transfer pricing, and macroeconomic research.</p>
+      </div>
+      <div class="about-grid" data-reveal>
+        <div class="about-text">
+          <p>I am an economist with experience translating financial and economic information into clear analysis. My work has included financial statement review, profitability and cost structure analysis, benchmarking, and macroeconomic research.</p>
+          <p>Across <strong>Deloitte, Andersen, and Banco de la República</strong>, I have worked with large datasets, validated information from multiple sources, and prepared structured reports for consulting and research teams.</p>
+          <p>I bring together an analytical foundation and practical tools such as Excel, Power BI, SQL, Python, and R—with careful attention to assumptions, accuracy, and the people who use the results.</p>
+        </div>
+        <div class="facts" aria-label="Professional profile">
+          <div class="fact"><span>Based in</span><span>Bogotá, Colombia</span></div>
+          <div class="fact"><span>Education</span><span>B.A. in Economics</span></div>
+          <div class="fact"><span>Languages</span><span>Spanish · English (C1)</span></div>
+          <div class="fact"><span>Focus</span><span>Finance &amp; economics</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section expertise" id="expertise">
+      <div class="wrap">
+        <div class="section-head" data-reveal>
+          <div><div class="section-kicker">02 / Areas of expertise</div><h2>Where I add<br>analytical value.</h2></div>
+          <p class="section-intro">Selected areas drawn from my consulting and research experience. Each begins with sound inputs and ends with a clear, well-supported view.</p>
+        </div>
+        <div class="expertise-grid">
+          <article class="expertise-card" data-reveal><div class="expertise-index">01</div><span class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 19V5m0 14h17M7 15l4-4 3 3 6-7"/><circle cx="20" cy="7" r="1"/></svg></span><h3>Financial performance</h3><p>Reviewing statements, cost structures, margins, and return metrics to understand financial health and performance drivers.</p></article>
+          <article class="expertise-card" data-reveal><div class="expertise-index">02</div><span class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="9" cy="9" r="5"/><circle cx="15" cy="15" r="5"/><path d="M12.5 5.5 18.5 11.5"/></svg></span><h3>Benchmarking &amp; advisory</h3><p>Building comparability analyses and financial models, and validating inputs that support consulting and transfer pricing work.</p></article>
+          <article class="expertise-card" data-reveal><div class="expertise-index">03</div><span class="expertise-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 19V5m0 14h16M7 15V9m5 6V5m5 10v-4"/></svg></span><h3>Economic research &amp; data</h3><p>Structuring macroeconomic and financial datasets, reviewing indicators, and supporting analysis of economic trends and forecasts.</p></article>
+        </div>
+        <div class="toolbox" aria-label="Technical tools"><span>Advanced Excel · VBA</span><span>Power BI</span><span>SQL</span><span>Python</span><span>R</span><span>Stata</span><span>SAP</span><span>HubSpot</span><span>AI tools</span></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="experience">
+      <div class="section-head" data-reveal>
+        <div><div class="section-kicker">03 / Experience &amp; education</div><h2>Built across<br>finance and research.</h2></div>
+        <p class="section-intro">Experience in consulting environments and public-sector economic research, with a foundation in economics.</p>
+      </div>
+      <div class="experience-layout">
+        <p class="experience-aside" data-reveal>Working with multidisciplinary teams, international clients, and complex financial information has shaped how I approach analysis: with structure, precision, and context.</p>
+        <div class="timeline" data-reveal>
+          <article class="job"><div class="job-date">Mar 2025 — Dec 2025</div><div><h3 class="job-title">Consultant, Transfer Pricing</h3><p class="job-company">Deloitte Asesores y Consultores S.A.S.</p><p class="job-description">Reviewed financial statements and performance metrics, developed benchmarking and comparability analyses, and prepared financial and technical reports for client decision-making and corporate compliance.</p></div></article>
+          <article class="job"><div class="job-date">Apr 2023 — Dec 2024</div><div><h3 class="job-title">Associate, Transfer Pricing &amp; Financial Advisory</h3><p class="job-company">Andersen Colombia S.A.S.</p><p class="job-description">Managed financial data and deliverables; conducted economic analyses, financial modeling, and benchmarking; and validated historical results, assumptions, and inputs for projections and forecasts.</p></div></article>
+          <article class="job"><div class="job-date">Jul 2022 — Dec 2022</div><div><h3 class="job-title">Research Unit Intern</h3><p class="job-company">Banco de la República</p><p class="job-description">Supported research related to monetary and exchange rate policy, structured macroeconomic and financial databases, and assisted with analysis of indicators, forecasts, and economic trends.</p></div></article>
+          <div class="education"><div class="education-label">2023</div><div><h3 class="education-title">Bachelor's Degree in Economics</h3><p class="education-detail">Universidad Externado de Colombia</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="credentials">
+      <div class="wrap credentials-grid" data-reveal>
+        <div><div class="section-kicker">04 / Continued learning</div><h2>Grounded in economics.<br>Growing with technology.</h2><p class="credentials-copy">Professional development across cloud fundamentals, financial markets, corporate finance, project management, and emerging AI tools.</p></div>
+        <div class="credential-list" aria-label="Certifications and learning"><span>AWS Cloud Practitioner</span><span>Financial Markets</span><span>Corporate Finance Foundations · CFI</span><span>Project Management Foundations</span><span>McKinsey.org Forward Program</span><span>Central Bank Course · BanRep</span></div>
+      </div>
+    </section>
+
+    <section class="contact wrap" id="contact">
+      <div class="contact-panel" data-reveal>
+        <div><div class="section-kicker">05 / Contact</div><h2>Let’s start a thoughtful conversation.</h2><p class="contact-copy">For opportunities and conversations around financial analysis, economic research, and advisory work, feel free to reach out.</p></div>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:juanr.99731@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>juanr.99731@gmail.com</a>
+          <a class="contact-link" href="https://www.linkedin.com/in/juanramirez1" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.2 3.5a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4ZM3.4 9.6H7v11H3.4v-11Zm5.8 0h3.5v1.5h.1a3.9 3.9 0 0 1 3.5-1.9c3.8 0 4.5 2.5 4.5 5.7v5.7h-3.7v-5.1c0-1.2 0-2.8-1.8-2.8s-2.1 1.3-2.1 2.7v5.2H9.2v-11Z"/></svg>LinkedIn profile <span aria-hidden="true">↗</span></a>
+          <a class="contact-link" href="https://juanfin.github.io" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>Personal website <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><span class="footer-name">Juan Sebastián Ramírez Díaz</span><span>Economist · Financial analysis · Bogotá, Colombia</span><span>© <span id="year">2026</span></span></div></footer>
+  <script>
+    (() => {
+      const year = document.getElementById('year');
+      year.textContent = new Date().getFullYear();
+      const progress = document.getElementById('reading-progress-bar');
+      const experience = document.getElementById('experience');
+      const updateReadingState = () => {
+        const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+        progress.style.transform = `scaleX(${maxScroll > 0 ? window.scrollY / maxScroll : 0})`;
+        document.body.classList.toggle('light', experience.getBoundingClientRect().top < window.innerHeight * 0.42);
+      };
+      window.addEventListener('scroll', updateReadingState, { passive: true });
+      window.addEventListener('resize', updateReadingState);
+      updateReadingState();
+      if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      document.documentElement.classList.add('motion-ready');
+      const observer = new IntersectionObserver((entries, currentObserver) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            currentObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('[data-reveal]').forEach((element) => observer.observe(element));
+    })();
+  </script>
+</body>
+</html>
